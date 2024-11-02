@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone List Item Example</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Item a</li>
+        <li>Item b</li>
+        <li>Item c</li>
+    </ul>
+    <button id="cloneButton">Clone Last Item</button>
+
+    <script>
+        document.getElementById('cloneButton').onclick = () => {
+            const list = document.getElementById('myList');
+            list.appendChild(list.lastElementChild.cloneNode(true));
+        };
+    </script>
+</body>
+</html>

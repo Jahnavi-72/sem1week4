@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Welcome to my club</h1>
+    <p class="exampleclass">This is a paragraph with a class</p>
+    <p>This is another paragraph without class</p>
+    <button id="my-button">Click Me</button>
+    <script>
+        const title=document.getElementById("title");
+        console.log('selected by ID',title);
+        const exampleclasselement=document.getElementsByClassName("class");
+        console.log('selected by class',exampleclasselement);
+        const paragraph=document.getElementsByTagName('p');
+        console.log("Selected by tag Name",paragraph);
+        
+        for(let i=0;i<exampleclasselement.length;i++){
+            console.log('Example class elemnts:',exampleclasselement[i]);
+        }
+        for(let i=0;i<paragraph.length;i++){
+            console.log('Paragraph tag:',paragraph[i]);
+        }
+        const button=document.getElementById('my-button');
+        console.log("selected Button",button);
+    </script>
+</body>
+</html>

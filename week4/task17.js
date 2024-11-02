@@ -1,0 +1,10 @@
+let myarray=["Apple","Mango"];
+console.log("array is" +myarray);
+myarray.push("Grapes");
+myarray.unshift("Guva");
+console.log("After inserting elements" +myarray);
+myarray.pop();
+myarray.shift();
+console.log("After removing" +myarray);
+myarray[1]="Blueberry";
+console.log("After updating"+myarray);

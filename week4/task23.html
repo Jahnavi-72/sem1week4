@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Example</title>
+</head>
+<body>
+    <h1 id="header">Original Header</h1>
+    <p id="paragraph">Original paragraph text.</p>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        // When the button is clicked, change the text content of the header and paragraph
+        document.getElementById('changeTextButton').onclick = function() {
+            // Change the header text
+            document.getElementById('header').textContent = 'Updated Header';
+
+            // Change the paragraph text with HTML
+            document.getElementById('paragraph').innerHTML = 'This is the <strong>updated</strong> paragraph text.';
+        };
+    </script>
+</body>
+</html>
+ 32 changes: 32 additions & 0 deletions32  
